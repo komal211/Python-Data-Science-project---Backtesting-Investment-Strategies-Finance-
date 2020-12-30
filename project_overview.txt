@@ -1,0 +1,31 @@
+Backtesting Investment Strategies (Finance)
+Goal: To create active strategies that outperform a passive buy and hold strategy for the Dow Jones index
+
+-->Importing the data
+-->Analyzing and visualizing data
+    --process data and calculate daily returns based on daily prices
+    --plot price over time using line plot
+    --calculate return using percentage change method (pct_change())
+    --plot price and return in one plot, need to create secondary y axis as scales are different for price and return
+    --rename columns close as DJI_Close and return as DJI_Return
+-->Backtesting a simple momentum strategy  
+    --calculate annulaized risk and return for both strategies i.e. Buy and Hold, Simple momentum
+-->Back test the strategies that are based on simple moving averages or short SMA
+    --strategy also called crossovers
+    --it can be argued that the most recent price trends that will persist also in the near future
+    --whenever SMA 50 crosses above moving average with longer window for instance SMA 200, it is a signal to buy or to go along because of the most recent trend rising prices that will persist in the nnear future
+    --whenever SMA 50 crosses below SMA 200, it is signal to sell or to go short because the most recent trend falling prices in the near future
+    --comparing SMA crossover momentum strategy with buy and hold
+    --determine daily returns of strategy and prices
+    --calculate annualized risk and return
+-->Backtesting the perfect strategy
+    --assume perfectly predict the future
+    --in morning of each trading day, predict whether dow jones index will rise or fall on that day and take appropriate position
+    
+    
+
+Python libraries used in the project:
+-->pandas
+-->matplotlib.pyplot
+-->numpy
+-->seaborn
